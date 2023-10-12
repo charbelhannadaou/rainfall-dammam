@@ -18,7 +18,7 @@ st.title('Bar Chart')
 
 #Annotating the first visualization
 st.write('Rainfall in mm from 2009 till 2019')
-st.write('In the following bar chart, we illustrate the monthly rainfall data in Dammam, Saudi Arabia, spanning from January 2009 to December 2019. We have the flexibility to choose the end date we wish to focus on using the slider. Upon analyzing data for all the years, it becomes evident that the months of November through January, corresponding to the winter season, exhibit the highest levels of rainfall. April, in particular, stands out as a month with high levels of rainfall. The peak rainfall recorded during this entire decade occurred in November 2018, with a remarkable 78.1 mm of rainfall.')
+st.write("In the following bar chart, we illustrate the monthly rainfall data in Dammam, Saudi Arabia, spanning from January 2009 to December 2019. We have the flexibility to choose the end date we wish to focus on using the slider. Upon analyzing data for all the years, it becomes evident that the months of November through January, corresponding to the winter season, exhibit the highest levels of rainfall. April, in particular, stands out as a month with high levels of rainfall. The peak rainfall recorded during this entire decade occurred in November 2018, with a remarkable 78.1 mm of rainfall.")
 
 #Adding a slider to select a specific year or month
 min_date = df['YearMonth'].min()
@@ -52,7 +52,7 @@ st.title('Heat map')
 
 # Annotating the second visualization
 st.write('Rainfall in mm from 2009 till 2019')
-st.write('In the heatmap, you can select specific years and months for a visual representation. The y-axis represents the months, while the x-axis displays the years. Each box in this matrix represents a unique combination of a month and year, with the box's color indicating the intensity of rainfall in Dammam during that specific period. What makes this visualization particularly useful is the ability to compare specific months on a year-to-year basis, helping us identify the years with the highest rainfall. When we select all years and months, clusters with more vivid colors stand out, suggesting periods of substantial rainfall, and vice versa. It's clear that, on average, the winter season from November to January consistently exhibits the highest levels of rainfall.')
+st.write("In the heatmap, you can select specific years and months for a visual representation. The y-axis represents the months, while the x-axis displays the years. Each box in this matrix represents a unique combination of a month and year, with the box's color indicating the intensity of rainfall in Dammam during that specific period. What makes this visualization particularly useful is the ability to compare specific months on a year-to-year basis, helping us identify the years with the highest rainfall. When we select all years and months, clusters with more vivid colors stand out, suggesting periods of substantial rainfall, and vice versa. It's clear that, on average, the winter season from November to January consistently exhibits the highest levels of rainfall.")
          
 # Creating a multiselect for selecting specific years
 selected_years = st.multiselect('Select Year(s)', dff['Year'].unique())
